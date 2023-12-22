@@ -1,0 +1,497 @@
+@font-face {
+  font-family: "avenir";
+  src: url(Outfit-VariableFont_wght.ttf);
+}
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(to bottom, #fef9f2, white 99%);
+}
+
+.container {
+  max-width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section {
+  padding-bottom: 150px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+a.square-button {
+  text-decoration: none;
+}
+a.square-button:hover img {
+  transform: scale(4, 1) translateX(-35%);
+}
+a.square-button:hover .square-button {
+  box-shadow: 0px 0px 5px 1px black;
+}
+a.square-button div.square-button {
+  background-color: #647b64;
+  display: flex;
+  max-width: 350px;
+  justify-content: space-between;
+  align-items: center;
+}
+a.square-button div.square-button p {
+  margin: 27px 29px 26px;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+a.square-button div.square-button img {
+  margin-right: 22px;
+  transition: 0.5s;
+}
+
+header {
+  position: relative;
+  margin-bottom: 150px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+header nav {
+  padding: 50px 0px;
+  transition: 0.2s;
+}
+header nav:hover {
+  background: linear-gradient(90deg, rgb(254, 249, 242) 5%, rgb(255, 255, 255) 50%, rgb(254, 249, 242) 95%);
+}
+header nav .container {
+  display: flex;
+  justify-content: space-between;
+}
+header nav .container .navleft {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+header nav .container .navright {
+  display: flex;
+  align-items: center;
+}
+header nav .container .navright ul {
+  display: flex;
+  list-style: none;
+  gap: 48px;
+  margin: 0px;
+  align-items: center;
+}
+header nav .container .navright ul li a:not(last-child):hover {
+  border-bottom: 1px solid black;
+}
+header nav .container .navright ul li a {
+  text-decoration: none;
+  color: black;
+}
+header nav .container .navright ul li:last-child a {
+  padding: 10px 15px;
+  background: linear-gradient(90deg, rgb(100, 123, 100) 0%, rgb(102, 172, 102) 98%);
+  color: white;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+header nav .container .navright ul li:last-child a:hover {
+  box-shadow: 1px 1px 5px 1px black;
+}
+@media (max-width: 799px) {
+  header nav .container .navright ul li {
+    display: none;
+  }
+}
+header nav .container .navright > a {
+  display: none;
+}
+@media (max-width: 799px) {
+  header nav .container .navright > a {
+    display: inline-block;
+  }
+}
+header .hero .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .hero .container .hero-left {
+  transition: 0.2s;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 495px;
+  position: relative;
+}
+@media (max-width: 499px) {
+  header .hero .container .hero-left {
+    transform: scale(0.8, 0.8);
+  }
+}
+header .hero .container .hero-left h2 {
+  font-size: 48px;
+  margin: 0px;
+  text-transform: uppercase;
+  width: 126%;
+}
+header .hero .container .hero-left > p {
+  margin: 0px;
+  font-size: 20px;
+  line-height: 26.4px;
+  font-weight: 400;
+}
+header .hero .container .hero-left > img {
+  height: 84px;
+  width: 84px;
+  position: absolute;
+  left: 200px;
+  top: -35px;
+}
+header > img {
+  position: absolute;
+  bottom: 40px;
+  left: 0px;
+}
+
+section.pirmas-section .container {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 799px) {
+  section.pirmas-section .container {
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+@media (max-width: 499px) {
+  section.pirmas-section .container {
+    transform: scale(0.9, 0.9);
+  }
+}
+section.pirmas-section .container .section-left > p:first-child {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+section.pirmas-section .container .section-left > p:nth-child(3) {
+  font-weight: 400;
+  size: 16px;
+  max-width: 412px;
+}
+section.pirmas-section .container .section-left h3 {
+  font-size: 41px;
+  text-transform: uppercase;
+}
+section.pirmas-section .container .section-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+section.pirmas-section .container .section-right .card {
+  padding: 20px;
+  max-width: 288px;
+  cursor: pointer;
+}
+section.pirmas-section .container .section-right .card:hover {
+  box-shadow: 1px 1px 5px 2px lightgrey;
+  background-color: white;
+}
+section.pirmas-section .container .section-right .card:hover svg {
+  background-color: #647b64;
+}
+section.pirmas-section .container .section-right .card:hover svg path {
+  fill: white;
+}
+section.pirmas-section .container .section-right svg {
+  padding: 5px;
+  box-sizing: content-box;
+  box-shadow: 1px 1px 3px 1px rgba(211, 211, 211, 0.689);
+  border-radius: 5px;
+  transition: 0.2s;
+}
+
+section.antras-section .tekstas {
+  text-align: center;
+}
+section.antras-section .tekstas p {
+  font-size: 24px;
+  font-weight: 500px;
+  text-transform: uppercase;
+}
+section.antras-section .tekstas h3 {
+  font-size: 41px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+section.antras-section .container {
+  width: 1160px;
+}
+section.antras-section .container .options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+section.antras-section .container .options .option {
+  padding: 78px 50px 72px;
+  background: linear-gradient(0deg, rgb(237, 240, 237) 0%, rgb(255, 255, 255) 73%);
+  border-radius: 10px;
+  transition: 0.2s;
+  cursor: pointer;
+  position: relative;
+}
+section.antras-section .container .options .option h4 {
+  font-size: 24px;
+  font-weight: 500;
+}
+section.antras-section .container .options .option p {
+  font-size: 16px;
+  font-weight: 500;
+}
+section.antras-section .container .options .option:hover {
+  background: #647b64;
+  color: white;
+}
+section.antras-section .container .options .option:hover path {
+  fill: white;
+}
+section.antras-section .container .options .option img {
+  position: absolute;
+  bottom: -40px;
+  left: -34px;
+  z-index: -1;
+}
+
+section.section3 {
+  transition: 0.3s;
+}
+@media (max-width: 1099px) {
+  section.section3 {
+    transform: translate(-30%);
+  }
+}
+@media (max-width: 799px) {
+  section.section3 {
+    transform: translate(-80%) scale(0.9, 0.9);
+  }
+}
+@media (max-width: 499px) {
+  section.section3 {
+    transform: translate(-130%) scale(0.8, 0.8);
+  }
+}
+section.section3 .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+section.section3 .container .kaire {
+  background: linear-gradient(180deg, rgb(249, 231, 217) 0%, rgb(253, 248, 246) 72%);
+  margin-left: 77px;
+  margin-top: 44px;
+}
+section.section3 .container .kaire img {
+  position: relative;
+  right: 77px;
+  bottom: 44px;
+  transition: 0.5s;
+}
+section.section3 .container .kaire:hover img {
+  transform: rotate(-0.03turn);
+}
+section.section3 .container .desine {
+  align-self: center;
+  justify-self: center;
+}
+section.section3 .container .desine > p:first-child {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+section.section3 .container .desine > p:nth-child(3) {
+  font-weight: 400;
+  size: 16px;
+  max-width: 412px;
+}
+section.section3 .container .desine h3 {
+  font-size: 41px;
+  text-transform: uppercase;
+}
+
+section.section4 {
+  overflow: hidden;
+  padding-top: 5px;
+}
+section.section4 .container .virsus {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+section.section4 .container .virsus .tekstas p {
+  color: #f3b562;
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0px;
+  text-transform: uppercase;
+}
+section.section4 .container .virsus .tekstas h3 {
+  color: #647B64;
+  font-size: 41px;
+  font-weight: 500;
+  margin: 0px;
+  text-transform: uppercase;
+}
+section.section4 .container .virsus .navigacija svg {
+  box-sizing: content-box;
+  padding: 22px;
+  border-radius: 50%;
+}
+section.section4 .container .virsus .navigacija svg:first-child {
+  cursor: not-allowed;
+}
+section.section4 .container .virsus .navigacija svg:first-child:hover path {
+  fill: grey;
+}
+section.section4 .container .virsus .navigacija svg:last-child {
+  background: linear-gradient(90deg, rgb(100, 123, 100) 0%, rgb(102, 172, 102) 98%);
+}
+section.section4 .container .virsus .navigacija svg:last-child:hover {
+  background: white;
+  outline: 1px solid black;
+  cursor: pointer;
+}
+section.section4 .container .virsus .navigacija svg:last-child:hover path {
+  fill: #647b64;
+}
+@media (max-width: 799px) {
+  section.section4 .container .virsus .navigacija {
+    display: none;
+  }
+}
+section.section4 .container .kortos {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 40px;
+}
+section.section4 .container .kortos .korta {
+  width: 360px;
+  padding: 32px 32px 32px 40px;
+  background: linear-gradient(0deg, rgb(234, 237, 234) 0%, rgb(255, 255, 255) 33%);
+  border-radius: 10px;
+  cursor: pointer;
+}
+section.section4 .container .kortos .korta:hover {
+  box-shadow: 1px 1px 5px 1px lightgrey;
+}
+section.section4 .container .kortos .korta .virsus .aprasymas {
+  position: relative;
+  right: 10px;
+}
+section.section4 .container .kortos .korta .virsus .aprasymas h5 {
+  font-size: 16px;
+  font-weight: 500;
+  white-space: nowrap;
+  margin: 0px 0px 10px;
+}
+section.section4 .container .kortos .korta .virsus .aprasymas p {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+footer {
+  background-color: #f0dcc5;
+  padding: 103px 0px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+footer .container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  row-gap: 50px;
+}
+@media (max-width: 799px) {
+  footer .container {
+    grid-template-columns: 1fr;
+  }
+}
+footer .container .copyrightai {
+  display: flex;
+  flex-direction: column;
+  height: 232px;
+  justify-content: space-between;
+}
+footer .container .copyrightai .logo {
+  display: flex;
+  align-items: center;
+}
+footer .container .copyrightai p {
+  font-weight: 400;
+  font-size: 14px;
+}
+footer .container .copyrightai small {
+  font-weight: 400;
+  font-size: 14px;
+}
+footer .container .copyrightai .socials {
+  display: flex;
+  justify-content: start;
+  gap: 16px;
+}
+footer .container .copyrightai .socials div {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  background-color: #e2d2bc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+footer .container .vidurys {
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 799px) {
+  footer .container .vidurys {
+    justify-content: start;
+  }
+}
+footer .container .vidurys .company-support {
+  height: 232px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer .container .vidurys .company-support h6 {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0px;
+}
+footer .container .vidurys .company-support a {
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+  font-size: 16px;
+}
+footer .container .zinute form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 232px;
+}
+footer .container .zinute form label {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0px;
+}
+footer .container .zinute form input {
+  height: 113px;
+  max-width: 350px;
+  padding-left: 20px;
+  padding-bottom: 60px;
+}/*# sourceMappingURL=style.css.map */
